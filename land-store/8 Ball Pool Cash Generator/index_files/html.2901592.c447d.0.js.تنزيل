@@ -1,0 +1,50 @@
+(function () {var it_id=2901592;var html="<div id=\"CPABUILD_MODAL\">\r\n    <div id=\"CPABUILDMODALCONTENT\">\r\n        <div id=\"CPABUILDMODALHEADER\">\r\n            <div id=\"CPABUILDMODALTITLE\"><\/div> <\/div>\r\n        <div id=\"CPABUILDMODALBODY\">\r\n            <iframe id=\"CPABUILDOFFERS\" style=\"overflow:hidden;\" src=\"\"><\/iframe>\r\n        <\/div>\r\n        <div id=\"CPABUILDMODALFOOTER\">\r\n            <p id=\"CPABUILDMODALFOOTERTEXT\"><\/p>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n";var css="\/content_lockers\/CustomButton\/css.css";var cssDIR="CustomButton";var defaultSettings={"%button_color_1%":{"title":"Button Color 1","default":"#378bdc","type":"color","small":"Buttons will use top to bottom gradient."},"%button_color_2%":{"title":"Button Color 2","default":"#1c66bd","type":"color","small":"Buttons will use top to bottom gradient."},"%main_button_text%":{"title":"Main Button Text","default":"Verify","type":"text"},"%main_button_icon%":{"title":"Main Button Icon","default":"lock","type":"icon"},"%main_button_font_size%":{"title":"Main Button Font Size","default":"25","type":"number"},"%input_css%":{"title":"Custom CSS","default":"a.offer-text {\r\n\tfont-size: 16px;\r\n}","type":"html_css","small":"CSS Only. No HTML or JS. Edit with caution.","custom_filter":true},"%html_overall%":{"title":"HTML Template","default":"<div class='center1'><div class='center2'><div class='center3'>\r\n\t<div id='step1-wrapper'>\r\n\t\t<button type='button' class='btn btn-large continue-button gradient responsive-width' id='continue-button'><i class='fa fa-%main_button_icon%'><\/i> Verify<\/button>\r\n\t<\/div>\r\n\t<div id='step2-wrapper' style='display: none;'>\r\n\t\t%offers%\r\n\t<\/div>\r\n<\/div><\/div><\/div>","type":"html","small":"Overall HTML Template. Edit with caution.","custom_filter":true},"%html_offer%":{"title":"Offer HTML","default":"<div class='offer-wrapper'><a class='btn offer-btn offer-text gradient responsive-width strike-tooltip' target='_blank' rel='noreferrer' href='{offer_link}' title='%offer_conversion%'>%offer_anchor%<\/a><\/div>","type":"html","small":"Individual Offer HTML. Edit with caution.","custom_filter":true},"overlay_color":{"title":"BG Overlay Color","default":"#000000","type":"color","small":"Background color of overlay (not used in iframe mode)."},"overlay_opacity":{"title":"Overlay Opacity","default":"0.4","type":"text","small":"Overlay Opacity (0 for transparent, 1 for opaque)"},"number_offers":{"title":"Number of Offers","default":4,"type":"number","small":"Max of 5 offers."},"number_offers_required":{"title":"Offers Required","default":1,"type":"number","small":"Offers required for unlock."},"payout_required":{"title":"Payout Required (Cents)","default":1,"type":"number","small":"Payout required (in cents). 500 = $5.00"},"animation":{"title":"Entrance Animation","default":"CPABUILD_fadeIn","type":"select","options":{"Drop From Top":"CPABUILD_animateTop","Fade In":"CPABUILD_fadeIn","Slide From Right":"CPABUILD_slideRight","Slide Up":"CPABUILD_slideUp","Slide From Right (3D)":"CPABUILD_slideFall","Spin In":"CPABUILD_spinIn"}},"animation_duration":{"title":"Animation Duration (ms)","default":"600","type":"number","small":"1000ms = 1 second"},"onClose":{"title":"On Offer Complete","default":"redirect","type":"select","options":{"Close Locker":"close_locker","Redirect to URL":"redirect"}},"onCloseURL":{"title":"Redirect URL","default":"https:\/\/google.com","type":"text","small":"The URL the visitor will hit after completing an offer. Only enabled if option above is set to redirect."},"disable_right_click":{"title":"Disable Right Click","default":"0","type":"toggle","small":"Right click will be disabled for the entire page."},"escape_key_close":{"title":"Escape Key Close","default":"0","type":"toggle","small":"If enabled, user can exit content locker with escape key."}};var userSettings={"%button_color_1%":"#378bdc","%button_color_2%":"#1c66bd","%main_button_text%":"Verify","%main_button_icon%":"lock","%main_button_font_size%":25,"%input_css%":"\nbody {\n    \n    overflow: hidden;\n    padding: 10px;\n  }\n  \n \n  \n  .display {\n    background: rgba(98,85,83,0.9);\n    background: -moz-linear-gradient(to right bottom, #d3e4ff, #d5e3ff, #d6e1ff, #d9e0ff, #dbdeff, #dadbfa, #d9d8f4, #d8d5ef, #d2d0e3, #cccad7, #c6c5cc, #c0c0c0);\n    background: -webkit-gradient(left top, left bottom, color-stop(0%, grey), color-stop(100%, rgba(22,8,13,0.9)));\n    background: -webkit-linear-gradient(to right bottom, #d3e4ff, #d5e3ff, #d6e1ff, #d9e0ff, #dbdeff, #dadbfa, #d9d8f4, #d8d5ef, #d2d0e3, #cccad7, #c6c5cc, #c0c0c0);\n    background: -o-linear-gradient(to right bottom, #d3e4ff, #d5e3ff, #d6e1ff, #d9e0ff, #dbdeff, #dadbfa, #d9d8f4, #d8d5ef, #d2d0e3, #cccad7, #c6c5cc, #c0c0c0);\n    background: -ms-linear-gradient(to right bottom, #d3e4ff, #d5e3ff, #d6e1ff, #d9e0ff, #dbdeff, #dadbfa, #d9d8f4, #d8d5ef, #d2d0e3, #cccad7, #c6c5cc, #c0c0c0);\n    background: linear-gradient(to right bottom, #d3e4ff, #d5e3ff, #d6e1ff, #d9e0ff, #dbdeff, #dadbfa, #d9d8f4, #d8d5ef, #d2d0e3, #cccad7, #c6c5cc, #c0c0c0);\n    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#625553', endColorstr='#16080d', GradientType=0 );\n    max-width: 450px;\n    padding: 10px;\n    margin: 5% auto;\n    border: 2px dotted orange;\n    border-radius: 35px;\n\n    box-shadow: 0 0 5px #c6c5cc,\n        0 0 5px #d8d5ef,\n        0 0 10px #dadbfa,\n        0 0 15px #d6e1ff,\n        0 0 20px #d3e4ff;\n\n    color: #FFF;\n    animation: neon 1s linear 1s infinite alternate;\n  }\n  @keyframes neon{\n    0% { box-shadow: 0 0 5px #c6c5cc,\n        0 0 5px #d8d5ef,\n        0 0 10px #dadbfa,\n        0 0 15px #d6e1ff,\n        0 0 20px #d3e4ff;}\n    100%{     box-shadow: 0 0 5px #c6c5cc,\n        0 0 5px #d8d5ef,\n        0 0 20px #dadbfa,\n        0 0 40px #d6e1ff,\n        0 0 70px #d3e4ff;}\n    }\n  \n  \n  h1 {\n    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;\n   \n  }\n\n  a.offer-text {\n\tfont-size: 16px;\n}\n  \n  .btn\n {\n  background: #FFF;\n  color: #333;\n  border: 1.5px solid orange;\n  font-family: 'Didact Gothic', sans-serif;\n  padding: 5px 5px;\n  width: 90%;\n  \nbackground-color: transparent;\n\n  box-shadow: 0 0 5px #c6c5cc,\n        0 0 5px grey,\n        0 0 10px #dadbfa,\n        0 0 15px #d6e1ff,\n        0 0 20px #d3e4ff;\n  border-radius: 10px;\n}\nh1{\n  text-shadow: 0 0 5px #c6c5cc,\n        0 0 5px #d8d5ef,\n        0 0 10px #dadbfa,\n        0 0 15px #d6e1ff,\n        0 0 20px #d3e4ff;\n\n}\n\n.btn:hover \n{\n  color: grey;\n  box-shadow: inset 0 0 10px white, 0 0 10px whitesmoke inset, 0 3px grey;\n}\np{\n  color: #2A2A2A;\n}\n\n","%html_overall%":"\n\n<center>\n    <div class=\"display\">\n      <img src=\"https:\/\/d13pxqgp3ixdbh.cloudfront.net\/uploads\/16354859957dea05b5f800747d423f0c14051ee1b0.png\" alt=\"8ball\" style=\"width:100%;max-width:300px;\">\n        <h1>Human Verification<\/h1>\n        \n        <p>Complete an offer down below, to prove you are a Human and not an automated bot.<\/p>\n        <div class=\"offers\"> %offers% <\/div>\n        <br><img src=\"https:\/\/d13pxqgp3ixdbh.cloudfront.net\/uploads\/1635422537247cb06dc52e2db3615edcb8f963724d.gif\" style=\"width:100%;max-width:20px;\"><br>Waiting for Completion.\n    <\/div>\n<\/center>\n\n","%html_offer%":"<div class='offer-wrapper'><a class='btn offer-btn offer-text gradient responsive-width strike-tooltip' target='_blank' rel='noreferrer' href='{offer_link}' title='%offer_conversion%'>%offer_anchor%<\/a><\/div>","overlay_color":"#000000","overlay_opacity":"0.4","number_offers":4,"number_offers_required":1,"payout_required":1,"animation":"CPABUILD_fadeIn","animation_duration":600,"onClose":"redirect","onCloseURL":"http:\/\/cpabuild.com\/public\/redirect.php?lead_id=%lead_id%","disable_right_click":1,"escape_key_close":1};var dmcaRemoved=0;cpaBuildExecuteWithBody();
+function cpaBuildExecuteWithBody(){
+    if(typeof document.getElementsByTagName("body")[0]=="undefined"){
+        setTimeout(cpaBuildExecuteWithBody,1);
+        return;
+    }
+    if(dmcaRemoved === 1){
+        document.getElementsByTagName("body")[0].innerHTML="DMCA Removed";
+        document.getElementsByTagName("body")[0].style.background="#fff";
+        return;
+    }
+    //Specific CSS
+    CPABUILDContentLocker.setTemplateCSSDir(cssDIR);
+
+    var specificCSSID="CPABUILDSPECIFICSTYLE";
+    var currentCSSEl=document.getElementById(specificCSSID);
+    CPABUILDContentLocker.removeElByID("CPABUILD_MODAL_CONTAINER");
+/*    if(!currentCSSEl){
+        addCSSLink();
+    }
+    else if(currentCSSEl.dataset.it!=it_id){
+        {
+            CPABUILDContentLocker.removeElByID(specificCSSID);
+            addCSSLink();
+        }
+    }*/
+
+/*    function addCSSLink(){
+        var l= document.createElement("link");
+        l.setAttribute("data-it",it_id);
+        l.rel="stylesheet";
+        l.id=specificCSSID;
+        l.href=CPABUILDContentLocker.prefix+"templates.cpabuild.com"+css;
+        document.getElementsByTagName("head")[0].appendChild(l);
+        var currentCSSEl=document.getElementById(specificCSSID);
+    }*/
+
+
+//HTML
+    CPABUILDContentLocker.removeElByID("CPABUILD_MODAL_CONTAINER");
+    var d=document.createElement("div");
+    d.style="display:none;";
+    d.id="CPABUILD_MODAL_CONTAINER";
+    d.innerHTML=html;
+    document.getElementsByTagName("body")[0].appendChild(d);
+    CPABUILDContentLocker.defaultSettings=defaultSettings;
+    CPABUILDContentLocker.userSettings=userSettings;
+    CPABUILDContentLocker.onVarsChange();
+}
+})();
